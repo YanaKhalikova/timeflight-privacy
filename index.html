@@ -1,16 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head><meta charset="UTF-8"><title>Политика конфиденциальности — TimeFlight</title></head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Политика конфиденциальности приложения TimeFlight">
+<title>Политика конфиденциальности — TimeFlight</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f7f7f9;
+    --border: #e6e6ea;
+    --text: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --accent: #007aff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --surface: #2c2c2e;
+      --border: #3a3a3c;
+      --text: #f5f5f7;
+      --text-secondary: #98989d;
+      --accent: #0a84ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #007aff, #0a84ff);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+  }
+  .logo-text {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+    line-height: 1.2;
+  }
+  .meta {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 40px 0 12px;
+  }
+  p {
+    margin: 0 0 12px;
+  }
+  ul {
+    margin: 0 0 12px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
 <body>
-<h1>Политика конфиденциальности TimeFlight</h1>
-<p>Дата вступления в силу: 1 января 2025 г.</p>
-<h2>Сбор данных</h2>
-<p>TimeFlight не собирает, не передаёт и не хранит никаких персональных данных на серверах. Все данные хранятся исключительно на вашем устройстве.</p>
-<h2>Использование данных</h2>
-<p>Приложение использует только локальное хранилище устройства (App Group) для синхронизации между приложением и виджетом на том же устройстве.</p>
-<h2>Уведомления</h2>
-<p>Приложение может отправлять локальные уведомления об истечении срока упражнений. Уведомления формируются на устройстве и не передаются третьим лицам.</p>
-<h2>Контакт</h2>
-<p>По вопросам: yana.k84@icloud.com</p>
+<div class="container">
+
+  <header>
+    <span class="logo">
+      <span class="logo-mark">✈︎</span>
+      <span class="logo-text">TimeFlight</span>
+    </span>
+    <h1>Политика конфиденциальности</h1>
+    <p class="meta">Действует с 1 января 2025 г. · Обновлено 27 мая 2026 г.</p>
+  </header>
+
+  <div class="card">
+    <strong>Кратко:</strong> TimeFlight не имеет своих серверов, не передаёт ваши данные третьим лицам и не использует аналитические сервисы. Всё хранение и синхронизация — через ваш личный аккаунт iCloud.
+  </div>
+
+  <h2>Какие данные хранятся</h2>
+  <p>Приложение работает только с теми данными, которые вы вводите сами:</p>
+  <ul>
+    <li>Список упражнений, даты выполнения, периоды перерыва, заметки.</li>
+    <li>Пользовательские подкатегории (вкладки).</li>
+    <li>Настройки приложения (тема, цвета, время уведомлений).</li>
+    <li>Имя пилота / позывной (если вы их укажете).</li>
+  </ul>
+
+  <h2>Где хранятся данные</h2>
+  <ul>
+    <li><strong>Локально на устройстве</strong> — основное хранилище в App Group, доступное приложению и виджету.</li>
+    <li><strong>В вашем личном iCloud</strong> — для синхронизации между вашими устройствами (iPhone, iPad). Используется CloudKit от Apple; данные находятся в приватной базе вашего Apple ID и недоступны разработчику.</li>
+    <li><strong>В локальных резервных копиях</strong> — еженедельные снимки в папке Documents приложения, доступные через Files.app.</li>
+  </ul>
+
+  <h2>Режим командира</h2>
+  <p>Если вы используете функцию «Режим командира» (например, делитесь данными с инструктором), приложение использует <strong>CloudKit Sharing</strong>:</p>
+  <ul>
+    <li>Вы создаёте share-ссылку через системный диалог iOS и сами выбираете кому отправить.</li>
+    <li>Получатель видит ваши упражнения в режиме «только чтение». Запись с его стороны не предусмотрена.</li>
+    <li>Доступ можно отозвать в любой момент в Настройках → Режим командира.</li>
+    <li>Передача идёт исключительно через Apple iCloud; разработчик не имеет к ней доступа.</li>
+  </ul>
+
+  <h2>Уведомления</h2>
+  <p>Приложение использует уведомления двух типов:</p>
+  <ul>
+    <li><strong>Локальные</strong> — об истечении срока упражнений, формируются на устройстве.</li>
+    <li><strong>Silent push от CloudKit</strong> — только в режиме командира, чтобы быстро доставить вам изменения от подчинённых. Содержимое уведомления формируется на устройстве после получения push.</li>
+  </ul>
+  <p>Никаких маркетинговых или сторонних push-уведомлений нет.</p>
+
+  <h2>Что мы не делаем</h2>
+  <ul>
+    <li>Не используем сторонние аналитические SDK (Firebase, Amplitude и т.п.).</li>
+    <li>Не отслеживаем поведение пользователей.</li>
+    <li>Не передаём данные рекламным сетям.</li>
+    <li>Не создаём аккаунты на наших серверах — их просто нет.</li>
+  </ul>
+
+  <h2>Ваши права</h2>
+  <p>Поскольку данные хранятся на ваших устройствах и в вашем iCloud, вы полностью ими управляете:</p>
+  <ul>
+    <li>Удаление приложения удаляет локальные данные.</li>
+    <li>Управление iCloud-данными — в Настройках iOS → Apple ID → iCloud → Manage Storage → TimeFlight.</li>
+    <li>Экспорт данных — через раздел Настройки → Создать резервную копию.</li>
+  </ul>
+
+  <h2>Изменения политики</h2>
+  <p>Существенные изменения этой политики будут отражены в дате «Обновлено» вверху и анонсированы в release notes приложения.</p>
+
+  <h2>Контакт</h2>
+  <p>По вопросам конфиденциальности: <a href="mailto:yana.k84@icloud.com">yana.k84@icloud.com</a></p>
+
+  <footer>
+    © 2026 TimeFlight · <a href="https://github.com/YanaKhalikova/TimeFlight">GitHub</a>
+  </footer>
+</div>
 </body>
 </html>
